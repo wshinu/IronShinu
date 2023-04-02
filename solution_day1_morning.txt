@@ -1,0 +1,61 @@
+Fork the repo then cloned the folder
+ clicked on forn on git hub site then changed the directory to  iron hack/week_1/Day_1/Morning/lab-bash 
+
+ Checked the folder by "ls" command 
+
+ Used the command echo 
+  echo "hello"
+
+ Created the new directory by using mkdir
+  mkdir my_folder
+
+Deleted the directory by using rmdir
+ rmdir my_folder
+
+ copied the sed.txt file from lorem folder to lorem-copy folder
+ by locating the file , then using  cp sed.txt ../lorem-copy/
+
+copied remaining two files at.txt and at.txte
+cp at.txt ../lorem-copy ; cp at.txte ../lorem-copy
+
+showed content of sed.txt
+located the file by changeing the directory then cat sed.txt
+
+showed the first thrre rows 
+head -n sed.txt
+
+showed the last three rows
+tail -n sed.txt
+
+replaced "et" with "ET" in at.txt file 
+$ sed -i 's/et/ET/g' at.txt
+
+found the user 
+using whoami
+
+found the current path 
+using pwd
+
+listed all the files with .txt extension
+ls -lh *.txt
+  
+counted the rows in sed.txt
+wc -l sed.txt
+
+counted the files with name lorem 
+find / -type f -name "lorem*" | wc -l
+ 
+
+bonus question
+
+stored the name in variable with read command 
+read -p "Enter your name: " name
+
+printed the name 
+echo $name 
+
+created the new directory with variable name 
+mkdir $name
+
+deleted the directory 
+rm -r $name
